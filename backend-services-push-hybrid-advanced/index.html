@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <link href="kendo/styles/kendo.mobile.all.min.css" rel="stylesheet">
+    <link href="styles/main.css" rel="stylesheet">
+
+    <script src="cordova.js"></script>
+    
+    <script src="kendo/js/jquery.min.js"></script>
+    <script src="kendo/js/kendo.mobile.min.js"></script>
+    
+    <script src="bower_components/everlive/min/everlive.all.min.js"></script>
+    
+    <script src="lib/appConsole.js"></script>
+
+    <script src="scripts/config.js"></script>
+    <script src="scripts/common.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/login.js"></script>
+    <script src="scripts/push-registrar.js"></script>
+    <script src="scripts/push-factory.js"></script>
+    <script src="scripts/push-sender.js"></script>
+    <script src="scripts/usersDataSource.js"></script>
+    <script src="scripts/users.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/signup.js"></script>
+</head>
+
+<body id="pushApp">
+    <div data-role="layout" data-id="default">
+        <!--View content will render here-->
+    </div>
+
+    <div id="initView" class="init-view form-view" data-role="view" data-model="app.loginViewModel" data-init="app.loginViewModel.events.init" data-show="app.loginViewModel.events.show">
+
+        <div data-role="header"></div>
+
+        <h1 class="app-logo hide-text center-block">Telerik</h1>
+        <h2 class="app-name center-text">Backend Services<small>Push Sample</small></h2>
+        <form id="login-form">
+            <ul data-role="listview" data-style="inset">
+                <li class="username">
+                    <input type="text" id="loginUsername" placeholder="Username" required validationMessage="Username is required!">
+                </li>
+                <li class="password">
+                    <input type="password" id="loginPassword" placeholder="Password" required validationMessage="Password is required!">
+                </li>
+            </ul>
+        </form>
+        <ol class="group-wrp">
+            <li>
+                <span id="login" data-role="touch" data-bind="events: { tap: login }">
+                    <a data-role="button" class="btn btn-action">Login</a>
+                </span>
+            </li>
+            <li class="signup">
+                <a data-role="button" href="views/signupView.html" class="btn-signup">Don't have an account?</a>
+            </li>
+        </ol>
+
+        <div data-role="footer">
+            <p>&copy; <span data-bind="text: getYear"></span>Telerik Inc.</p>
+        </div>
+    </div>
+</body>
+
+</html>

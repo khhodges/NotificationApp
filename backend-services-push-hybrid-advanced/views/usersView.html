@@ -1,0 +1,20 @@
+<div id="users-list" class="view users-list" data-role="view" data-model="app.usersModel" data-title="Users" data-before-show="app.usersModel.refreshUserList">
+    <div data-role="header">
+        <div data-role="navbar">
+            Users
+            <a class="nav-button nav-button-back hide-text" data-align="left" data-role="backbutton">Back</a>
+        </div>
+    </div>
+
+    <ul id="users-list-view" class="users-list-view" data-bind="source: usersDataSource" data-template="users-template" data-role="listview" data-click="app.usersModel.onUserSelected"></ul>
+
+    <div data-role="footer">
+        <span data-role="touch" data-bind="events: { tap: handleSendAction }">
+        	<a data-role="button" class="btn btn-action">Send</a>
+        </span>
+    </div>
+</div>
+
+<script id="users-template" type="text/x-kendo-template">
+    <div data-bind="attr: { class: isSelectedClass }">#: Username #</div>
+</script>
