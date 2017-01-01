@@ -18,7 +18,8 @@
                 if (pushEnabledForUser !== loggedInUser) {
                     // initializing the push notifications
                     app.PushRegistrar.enablePushNotifications();
-                    pushEnabledForUser = loggedInUser;
+					//app.PushRegistrar.updatePushNotifications();
+                    //pushEnabledForUser = loggedInUser;
                 }
             }
         }

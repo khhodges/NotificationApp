@@ -3,8 +3,8 @@
     var app = global.app = global.app || {};
     app.config = {
         everlive: {
-            appId: '$TELERIK_APP_ID$', // Put your Backend Services App ID here
-            scheme: 'http'
+            appId: '3t5oa8il0d0y02eq', // Put your Backend Services App ID here
+            scheme: 'https'
         },
         views: {
             init: '#initView',
@@ -14,7 +14,7 @@
             main: 'views/mainView.html'
         }
     };
-    app.androidProjectNumber = "ANDROID_PROJECT_NUMBER";
+    app.androidProjectNumber = "508581667442";
     app.constants = {
         NO_APP_ID_MESSAGE: '<h3>Telerik Platform <strong>App ID</strong> is not set.</h3><p><span>App ID</span> ' +
         'links the sample mobile app to a Telerik Platform app.</p><p>To set the <span>App ID</span> ' +

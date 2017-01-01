@@ -7,6 +7,7 @@
         var send = function () {
             var recipients = app.getSelectedUsersFromDataSource();
             var currentUsername = app.currentUserUsername.get('username');
+			appConsole.log(currentUsername+" sending notifications to " + recipients.length + " Users.")
 
             var notificationObject = app.PushFactory.create(currentUsername, recipients);
 

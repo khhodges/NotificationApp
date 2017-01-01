@@ -1,0 +1,13 @@
+<div id="main-view" class="view" data-role="view" data-after-show="app.MainViewModel.afterShow" data-model="app.MainViewModel">
+	<div data-role="header">
+		<div data-role="navbar"> Welcome! <a class="nav-button nav-button-logout hide-text" data-align="left" data-role="button" data-click="app.logout">Log out</a>			</div>
+	</div>
+	<div class="console"></div>
+	<div data-role="footer">
+		<div data-role="button-group"> <a href="views/usersView.html" data-role="button" class="btn btn-action">Send Push</a> 
+		<a data-click="app.PushRegistrar.updatePushNotifications"
+				data-role="button" class="btn btn-action">Update</a> 
+				<a data-click="app.PushRegistrar.unregisterNotifications" data-role="button"
+				class="btn btn-action">Unregister</a> </div>
+	</div>
+</div>
